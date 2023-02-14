@@ -21,3 +21,6 @@ Set up 10$ budget for Cruddur with one alert of 50% threshold.
 Created A CloudWatch alarm for exceeding maximum budget.
 ![image](https://user-images.githubusercontent.com/25799157/218746720-cac6aa60-d3a7-432e-a1b9-922896a3bc00.png)
 
+Created Conceptual Diagram in LucidChart
+https://lucid.app/lucidchart/94542c4a-9da2-4d5a-9b12-7808195b4040/edit?viewport_loc=-478%2C-194%2C2994%2C1437%2C0_0&invitationId=inv_d7579df8-1946-4eb3-aa33-616713a51e95
+![image](https://user-images.githubusercontent.com/25799157/218833818-7138128f-73de-4d55-8af1-0f1030c00a90.png)
