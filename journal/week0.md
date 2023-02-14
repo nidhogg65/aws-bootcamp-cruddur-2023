@@ -14,3 +14,10 @@ Added MFA for admin user
 
 Generated Access Keys for the admin iam user
 ![image](https://user-images.githubusercontent.com/25799157/218458971-27092aea-1549-429e-9cb6-7f4b7408d6cd.png)
+
+Set up 10$ budget for Cruddur with one alert of 50% threshold.
+![image](https://user-images.githubusercontent.com/25799157/218746335-e604826b-57a9-4a9e-987d-b4a0a1f36373.png)
+
+Created A CloudWatch alarm for exceeding maximum budget.
+![image](https://user-images.githubusercontent.com/25799157/218746720-cac6aa60-d3a7-432e-a1b9-922896a3bc00.png)
+
