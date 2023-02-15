@@ -1,7 +1,7 @@
 # Week 0 — Billing and Architecture
 
 Added MFA for root account
-![image](https://user-images.githubusercontent.com/25799157/218456929-45669910-855b-4eea-9197-996e0ccccfa0.png)
+![image](https://user-images.githubusercontent.com/25799157/219000691-3876176e-477f-4bf0-beb3-14dc02ec4325.png)
 
 
 Created admin user (had done that a couple of days before bootcamp started) and admin group
@@ -9,11 +9,12 @@ Created admin user (had done that a couple of days before bootcamp started) and 
 
 
 Added MFA for admin user
-![image](https://user-images.githubusercontent.com/25799157/218456066-c369d07e-7251-4c44-b4ea-7cdfd56c4b84.png)
+![image](https://user-images.githubusercontent.com/25799157/219001573-b8ca31ab-853a-4c05-94fb-c91b196b4b5f.png)
 
 
 Generated Access Keys for the admin iam user
-![image](https://user-images.githubusercontent.com/25799157/218458971-27092aea-1549-429e-9cb6-7f4b7408d6cd.png)
+![image](https://user-images.githubusercontent.com/25799157/219001835-f010faeb-c363-422a-8667-f61cf79747e4.png)
+
 
 Set up 10$ budget for Cruddur with one alert of 50% threshold.
 ![image](https://user-images.githubusercontent.com/25799157/218746335-e604826b-57a9-4a9e-987d-b4a0a1f36373.png)
