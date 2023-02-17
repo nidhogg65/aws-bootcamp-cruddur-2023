@@ -29,3 +29,10 @@ https://lucid.app/lucidchart/94542c4a-9da2-4d5a-9b12-7808195b4040/edit?viewport_
 Created Logical Diagram in LucidChart
 https://lucid.app/lucidchart/862813c4-2ad0-4fbf-b69c-003064d867ca/edit?viewport_loc=-904%2C-691%2C4992%2C2397%2C0_0&invitationId=inv_a9d827b3-9b20-4a57-93f1-7f4749fa9c88
 ![image](https://user-images.githubusercontent.com/25799157/219647745-018a27b0-e4cc-4d8f-b10f-e1edf37fe842.png)
+
+
+Created EventBridge rule, topic and subscription
+![image](https://user-images.githubusercontent.com/25799157/219770369-c203c897-ade5-4bcd-8cc1-fa946314acef.png)
+![image](https://user-images.githubusercontent.com/25799157/219770870-dbba5d9c-216b-49a3-9080-f124d8668c9d.png)
+![image](https://user-images.githubusercontent.com/25799157/219771459-a000775c-faa7-475a-abdc-12f28225895e.png)
+
