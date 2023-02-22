@@ -31,3 +31,8 @@ services:
       - ./frontend-react-js:/frontend-react-js
       ..........................................
 ```
+## Created repositories for frontend and backend images with tags in DockerHub
+https://hub.docker.com/repositories/nidhogg65
+![image](https://user-images.githubusercontent.com/25799157/220741412-052f83b7-b832-4b67-8a6b-1269d7de05aa.png)
+
+
