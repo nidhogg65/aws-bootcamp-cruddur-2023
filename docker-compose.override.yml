@@ -4,7 +4,7 @@ services:
     environment:
       FRONTEND_URL: "http://localhost:3000"
       BACKEND_URL: "http://localhost:4567"
-    build: ./backend-flask
+    image: nidhogg65/cruddur-backend-flask:1.0
     ports:
       - "4567:4567"
     volumes:
@@ -12,7 +12,7 @@ services:
   frontend-react-js:
     environment:
       REACT_APP_BACKEND_URL: "http://localhost:4567"
-    build: ./frontend-react-js
+    image: nidhogg65/cruddur-frontend-react-js:1.0
     ports:
       - "3000:3000"
     volumes:
