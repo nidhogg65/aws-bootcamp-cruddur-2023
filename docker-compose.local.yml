@@ -4,7 +4,7 @@ services:
     environment:
       FRONTEND_URL: "http://localhost:3000"
       BACKEND_URL: "http://localhost:4567"
-    image: nidhogg65/cruddur-backend-flask:1.0
+    image: nidhogg65/cruddur-backend-flask:1.1
     ports:
       - "4567:4567"
     volumes:
