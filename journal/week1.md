@@ -36,5 +36,8 @@ https://hub.docker.com/repositories/nidhogg65
 ![image](https://user-images.githubusercontent.com/25799157/220741412-052f83b7-b832-4b67-8a6b-1269d7de05aa.png)
 ## Managed to run the Cruddur app utilizing docker images from my personal repository
 ![image](https://user-images.githubusercontent.com/25799157/220743485-09820f1c-e03e-48db-a0e8-d684b9f714fe.png)
-
+## Implemented healthcheck endpoint in Cruddur backend and setup healthcheck in docker compose
+CDE ![image](https://user-images.githubusercontent.com/25799157/221034135-db6b72b0-9fa1-419d-b25f-fc7a19b7beb1.png)
+Local env ![image](https://user-images.githubusercontent.com/25799157/221034332-68502ce5-c184-4370-ac28-0df9ef3df99a.png)
+ 
 
