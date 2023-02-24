@@ -42,6 +42,7 @@ Local env ![image](https://user-images.githubusercontent.com/25799157/221034332-
 
 ## Created EC2 instance and install docker on it
 Created EC2 instance
+![image](https://user-images.githubusercontent.com/25799157/221187537-0129fcc9-a9b4-4c70-93ed-932e3a877771.png)
 Install docker on it
 ![image](https://user-images.githubusercontent.com/25799157/221182168-b29f6596-11cc-41ba-ac3e-b5aa43d3b8be.png)
 Pull the tagged image from my repository
