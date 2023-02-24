@@ -39,5 +39,15 @@ https://hub.docker.com/repositories/nidhogg65
 ## Implemented healthcheck endpoint in Cruddur backend and setup healthcheck in docker compose
 CDE ![image](https://user-images.githubusercontent.com/25799157/221034135-db6b72b0-9fa1-419d-b25f-fc7a19b7beb1.png)
 Local env ![image](https://user-images.githubusercontent.com/25799157/221034332-68502ce5-c184-4370-ac28-0df9ef3df99a.png)
+
+## Created EC2 instance and install docker on it
+Created EC2 instance
+Install docker on it
+![image](https://user-images.githubusercontent.com/25799157/221182168-b29f6596-11cc-41ba-ac3e-b5aa43d3b8be.png)
+Pull the tagged image from my repository
+![image](https://user-images.githubusercontent.com/25799157/221182679-c14d87ef-b6c1-4827-94c3-a433ca123c60.png)
+Run the container 
+![image](https://user-images.githubusercontent.com/25799157/221186975-4c14dba3-05fd-47de-a0e5-c92d51102d2e.png)
+
  
 
