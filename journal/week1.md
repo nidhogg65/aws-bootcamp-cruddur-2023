@@ -55,12 +55,12 @@ docker run --rm -p 3000:3000 -d frontend-react-js
 To be able to communicate with the app we also need to open frontend and backend ports in gitpod.
 
 
-## Documented a new notifications endpoint using openAPI.
-## Implemented the notifications functionality on backend and frontend sides and ensured that it works.
-## Added a local dynamodb to docker compose file, run create table script using AWS CLI thereby ensuring it works.
-## Added a postgresql to docker compose file, installed a postgresql client into gitpod and managed to enter the postgresql using the client as well as shell. 
+### 2. Documented a new notifications endpoint using openAPI.
+### 3. Implemented the notifications functionality on backend and frontend sides and ensured that it works.
+### 4. Added a local dynamodb to docker compose file, run create table script using AWS CLI thereby ensuring it works.
+### 5. Added a postgresql to docker compose file, installed a postgresql client into gitpod and managed to enter the postgresql using the client as well as shell. 
 
-## Technical Tasks
+## Challenges
 
 ### 1. Push and tag a image to DockerHub
 https://hub.docker.com/repositories/nidhogg65
