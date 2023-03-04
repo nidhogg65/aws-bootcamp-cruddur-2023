@@ -14,7 +14,7 @@ services:
       - ./backend-flask:/backend-flask
     healthcheck:
       test: ["CMD-SHELL", "curl -f $${BACKEND_URL}/api/healthcheck || exit 1"]
-      interval: 10s
+      interval: 60s
       retries: 5
       start_period: 30s
       timeout: 5s
