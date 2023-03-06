@@ -21,11 +21,11 @@ services:
   frontend-react-js:
     environment:
       REACT_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
-      REACT_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"
+      REACT_APP_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"
       REACT_APP_AWS_COGNITO_REGION: "${AWS_DEFAULT_REGION}"
       REACT_APP_AWS_USER_POOLS_ID: "us-east-1_Y9sPCeIKF"
       REACT_APP_CLIENT_ID: "5flu8ag518uouja4a57mj2l56m"
-    image: nidhogg65/cruddur-frontend-react-js:1.0
+    image: nidhogg65/cruddur-frontend-react-js:1.1
     ports:
       - "3000:3000"
     volumes:
