@@ -32,3 +32,25 @@ aws xray create-group --group-name "Cruddur" --filter-expression "service(\"back
 ```
 aws xray create-sampling-rule --cli-input-json file://aws/json/xray.json
 ```
+
+### Add Deamon Service to Docker Compose
+```
+xray-daemon:
+    image: "amazon/aws-xray-daemon"
+    environment:
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      AWS_REGION: "us-east-1"
+    command:
+      - "xray -o -b xray-daemon:2000"
+    ports:
+      - 2000:2000/udp
+```
+
+We need to add these two env vars to our backend-flask in our `docker-compose.yml` file
+```
+AWS_XRAY_URL: "*4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}*"
+AWS_XRAY_DAEMON_ADDRESS: "xray-daemon:2000"
+```
+After running the Cruddur with x-ray daemon, I did a couple of requests. As a result the traces were gathered, sent to AWS and displayed in AWS CloudWatch X-Ray traces panel.
+![image](https://user-images.githubusercontent.com/25799157/223406004-e2923dfa-2b40-4408-809e-a8867cf9aed1.png)
