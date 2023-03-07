@@ -48,6 +48,7 @@ xray-daemon:
 ```
 
 We need to add these two env vars to our backend-flask in our `docker-compose.yml` file
+
 ```
 AWS_XRAY_URL: "*4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}*"
 AWS_XRAY_DAEMON_ADDRESS: "xray-daemon:2000"
@@ -57,6 +58,7 @@ After running the Cruddur with x-ray daemon, I did a couple of requests. As a re
 
 ### Instrument X-Ray to Notifications Activities endpoint
 I added parent and nested child subsegments in `notifications_activities.py`.
+
 ```
 # Start a parent subsegment
 parent_subsegment = xray_recorder.begin_subsegment('notifications_activities')
@@ -81,3 +83,33 @@ xray_recorder.end_subsegment()
 After calling that endpoint, I could see the traces in AWS CloudWatch X-Ray traces panel.
 ![image](https://user-images.githubusercontent.com/25799157/223445566-58252aa9-b70d-41e3-8d64-61643529f104.png)
 
+### Implement CloudWatch Logs
+After adding `watchtower` dependency to `requirements.txt` file, I configured logger to use AWS CloudWatch in `app.py`.
+
+```
+# Configuring Logger to Use CloudWatch
+LOGGER = logging.getLogger(__name__)
+LOGGER.setLevel(logging.DEBUG)
+console_handler = logging.StreamHandler()
+cw_handler = watchtower.CloudWatchLogHandler(log_group='cruddur')
+LOGGER.addHandler(console_handler)
+LOGGER.addHandler(cw_handler)
+LOGGER.info("This is Cruddur app!!!")
+```
+```
+@app.after_request
+def after_request(response):
+    timestamp = strftime('[%Y-%b-%d %H:%M]')
+    LOGGER.error('%s %s %s %s %s %s', timestamp, request.remote_addr, request.method, request.scheme, request.full_path, response.status)
+    return response
+```
+I also passed the required envargs in `docker-compose.yaml`
+
+```
+AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION}"
+AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+```
+
+As a result, after calling the `/api/activities/home`, I could see the logs in AWS CloudWatch.
+![image](https://user-images.githubusercontent.com/25799157/223474122-c47c9136-bac8-4ace-80a3-4e1158b0b728.png)
